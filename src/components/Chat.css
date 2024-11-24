@@ -1,0 +1,107 @@
+
+
+.chat_room {
+   height: 100vh;
+   width: 100%;
+    display: flex;
+}
+
+.chat_room .heading {
+    position: absolute;
+    right: 27%;
+    top: 3%;
+}
+
+.heading {
+    font-family: poppins;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.chat_room .left {
+    position: relative;
+    background-color: black;
+    height: 100%;
+    width: 50%;
+}
+
+.chat_room .left img {
+    position: absolute;
+}
+
+.chat_room .right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+
+}
+
+.chat_room .right input {
+    position: absolute;
+    bottom: 5rem;
+    right: 15rem;
+}
+
+.right .submit_btn {
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+}
+
+.messges_container {
+    position: absolute;
+    top: 5rem;
+    height: 450px;
+    /* overflow-y: auto; */
+    overflow: auto;
+    width: 80%;
+    padding: 30px;
+
+}
+
+.messges_container::-webkit-scrollbar {
+    width: 10px; 
+    background: linear-gradient(#b388fc,#F99FE4);
+  }
+  
+  .messges_container::-webkit-scrollbar-thumb {
+    background: #1A1B2F; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .messges_container::-webkit-scrollbar-thumb:hover {
+    background: #f99fe4; /* Thumb color on hover */
+  }
+  
+  .messges_container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+.messges_container .message_box {
+    /* background-color: pink; */
+    padding: 9px;
+
+}
+
+.message_box span {
+    color: #1A1B2F;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.message_box h1 {
+    background-color: #1A1B2F;
+    color: #E2E5FB;
+    padding: 3px 9px;
+    border-radius: 7px;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 18px;
+
+}
